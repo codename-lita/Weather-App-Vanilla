@@ -1,13 +1,17 @@
 body {
   font-family: Comfortaa, "Arial Narrow", Arial, sans-serif;
-  background: linear-gradient(90deg, rgba(204, 228, 208, 0.986) 0%,rgb(233, 192, 169) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(204, 228, 208, 0.986) 0%,
+    rgb(233, 192, 169) 100%
+  );
 }
 
 h1 {
   color: darkseagreen;
   font-size: 40px;
   font-weight: 900;
-  line-height: 28px;
+  line-height: 33px;
   margin: 50px 0 10px;
 }
 ul {
@@ -33,7 +37,6 @@ a {
 }
 p {
   padding: 0;
-  
 }
 .weather-app-wrapper {
   max-width: 1200px;
@@ -58,11 +61,11 @@ p {
 #temperature {
   color: darkseagreen;
   font-size: 100px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1;
 }
 .weather-temperature img {
-   width: 150px;
+  width: 150px;
   height: 150px;
   margin-top: -40px;
   margin-left: 110px;
@@ -74,7 +77,6 @@ p {
   position: relative;
   font-size: 16px;
   top: -65px;
-  
 }
 .weather-temperature .active {
   color: #757575;
@@ -83,7 +85,7 @@ p {
 }
 .weather-temperature .active:hover {
   text-decoration: underline;
-  color:#757575;
+  color: #757575;
 }
 
 .conditions-col {
