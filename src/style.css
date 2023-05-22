@@ -1,6 +1,6 @@
 body {
   font-family: Comfortaa, "Arial Narrow", Arial, sans-serif;
-background: linear-gradient(111.5deg, rgba(204, 228, 208, 0.986) 21.9%, rgb(233, 192, 169) 92.2%);
+  background: linear-gradient(90deg, rgba(204, 228, 208, 0.986) 0%,rgb(233, 192, 169) 100%);
 }
 
 h1 {
@@ -8,7 +8,7 @@ h1 {
   font-size: 40px;
   font-weight: 900;
   line-height: 28px;
-  margin: 50px 0;
+  margin: 50px 0 10px;
 }
 ul {
   margin: 0;
@@ -25,42 +25,55 @@ li {
   margin: 0;
   padding: 10px 0;
 }
-li:first-letter {
-  text-transform: capitalize;
-}
 
+a {
+  text-decoration: none;
+  color: #757575;
+  font-weight: 900;
+}
+p {
+  padding: 0;
+  
+}
 .weather-app-wrapper {
   max-width: 1200px;
   margin: 30px auto;
 }
 .weather-app {
   padding: 20px;
-  border: 1px solid #FDFDFA;
+  border: 1px solid #fdfdfa7e;
   border-radius: 25px;
-  background-color: #FDFDFA;
+  background-color: #fdfdfa7e;
 }
 .overview {
   margin-bottom: 20px;
 }
 #description {
-  color: darkseagreen;
-  font-weight: 900;
-}
-.weather-temperature img {
-  margin-right: 5px;
-  height: 64px;
-  width: 64px;
-}
-.weather-temperature strong {
   color: #757575;
-  font-size: 70px;
-  font-weight: 400;
+  font-weight: 900;
+  text-align: center;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+#temperature {
+  color: darkseagreen;
+  font-size: 100px;
+  font-weight: 500;
   line-height: 1;
 }
-.weather-temperature .units {
+.weather-temperature img {
+   width: 150px;
+  height: 150px;
+  margin-top: -40px;
+  margin-left: 110px;
+}
+.temp-display {
+  margin-top: 25px;
+}
+.units {
   position: relative;
   font-size: 16px;
-  top: -34px;
+  top: -65px;
   
 }
 .weather-temperature .active {
@@ -70,12 +83,34 @@ li:first-letter {
 }
 .weather-temperature .active:hover {
   text-decoration: underline;
+  color:#757575;
 }
-#icon {
-  width: 150px;
-  height: 150px;
-  margin-top: -35px;
-}
+
 .conditions-col {
   text-align: right;
+}
+.conditions-description {
+  font-weight: 900;
+  color: rgb(235, 164, 141);
+}
+.form-control {
+  border-radius: 25px;
+}
+.search-btn {
+  border-radius: 25px;
+}
+.current-location-btn {
+  background-color: rgb(235, 164, 141);
+  border: 1px solid rgb(235, 164, 141);
+  border-radius: 25px;
+}
+.current-location-btn:hover {
+  background-color: darksalmon;
+  border: 1px solid darksalmon;
+}
+.source-code {
+  text-align: center;
+  color: #757575;
+  padding: 10px 0;
+  font-size: 20px;
 }

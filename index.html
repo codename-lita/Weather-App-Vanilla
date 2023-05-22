@@ -23,7 +23,7 @@
               <div class="col-8">
                 <input
                   type="search"
-                  placeholder="Type a City"
+                  placeholder="Search a City"
                   class="form-control"
                   id="city-input"
                   autocomplete="off"
@@ -33,7 +33,7 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-secondary w-100 search-btn"
                 />
               </div>
               <div class="col-2">
@@ -45,40 +45,47 @@
           </form>
           <div class="overview">
             <h1 id="city"></h1>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
+            <p>Last updated: <span id="date"></span></p>
           </div>
           <div class="row">
-            <div class="col-6">
-              <div class="d-flex weather-temperature">
-                <img src="" alt="partly cloudy" id="icon" />
-                <div>
-                  <strong id="temperature"></strong>
-                  <span class="units">
-                    <a href="#" id="celcius-link" class="active"> °C</a> |
-                    <a href="#" id="fahrenheit-link"> °F</a></span
-                  >
-                </div>
+            <div class="col-4">
+              <div class="temp-display">
+                <strong id="temperature"></strong>
+                <span class="units">
+                  <a href="#" id="celcius-link" class="active"> °C</a> |
+                  <a href="#" id="fahrenheit-link"> °F</a></span
+                >
               </div>
             </div>
-            <div class="col-6 conditions-col">
+            <div class="col-4 current-condition">
+              <div class="weather-temperature">
+                <p id="description"></p>
+                <img src="" alt="partly cloudy" id="icon" />
+              </div>
+            </div>
+            <div class="col-4 conditions-col">
               <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> m/h</li>
+                <li class="conditions-description">
+                  Humidity: <span id="humidity"></span>%
+                </li>
+                <br />
+                <li class="conditions-description">
+                  Wind: <span id="wind"></span> m/hr
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <small>
-          <a
-            href="https://github.com/codename-lita/Weather-App-Vanilla"
-            target="_blank"
-            >Open-Source Code
-          </a>
-          by Laura Torres
-        </small>
+        <div class="source-code">
+          <small>
+            <a
+              href="https://github.com/codename-lita/Weather-App-Vanilla"
+              target="_blank"
+              >Open-Source Code
+            </a>
+            created by Laura Torres
+          </small>
+        </div>
       </div>
     </div>
     <script src="src/app.js"></script>
